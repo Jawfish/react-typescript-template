@@ -2,6 +2,7 @@
   "name": "react-typescript-template",
   "private": false,
   "version": "0.0.1",
+  "license": "MIT",
   "type": "module",
   "packageManager": "^yarn@1.22.10",
   "scripts": {
