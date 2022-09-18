@@ -1,0 +1,27 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+		"editor.formatOnPaste": false,
+		"editor.formatOnType": false,
+		"editor.formatOnSave": true,
+		"editor.formatOnSaveMode": "file",
+		"files.autoSave": "onFocusChange",
+		"[typescriptreact]": {
+			"editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"bradlc.vscode-tailwindcss",
+			"heybourn.headwind",
+			"ms-vscode.vscode-typescript-next",
+			"antfu.vite",
+			"dbaeumer.vscode-eslint"
+		]
+	}
+}
