@@ -11,6 +11,7 @@
 		"editor.formatOnSave": true,
 		"editor.formatOnSaveMode": "file",
 		"files.autoSave": "onFocusChange",
+		"editor.insertSpaces": false,
 		"[typescriptreact]": {
 			"editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
 		},
