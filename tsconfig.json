@@ -10,7 +10,7 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
-    "moduleResolution": "Classic",
+    "moduleResolution": "Node",
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx"
