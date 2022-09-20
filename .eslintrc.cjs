@@ -6,7 +6,10 @@ module.exports = {
     'plugin:tailwindcss/recommended',
     'plugin:import/typescript',
     'plugin:prettier/recommended',
-    'plugin:promise/recommended'
+    'plugin:promise/recommended',
+    'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
+    'plugin:react-hooks/recommended'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -22,7 +25,8 @@ module.exports = {
     'import',
     'tailwindcss',
     'simple-import-sort',
-    'promise'
+    'promise',
+    'react'
   ],
   root: true,
   env: {
