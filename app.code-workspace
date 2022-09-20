@@ -13,14 +13,15 @@
 		"files.autoSave": "onFocusChange",
 		"[typescriptreact]": {
 			"editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+		},
+		"[javascript]": {
+			"editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
 		}
 	},
 	"extensions": {
 		"recommendations": [
 			"bradlc.vscode-tailwindcss",
-			"heybourn.headwind",
 			"ms-vscode.vscode-typescript-next",
-			"antfu.vite",
 			"dbaeumer.vscode-eslint"
 		]
 	}
