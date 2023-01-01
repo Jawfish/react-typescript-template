@@ -16,11 +16,25 @@ The intended package manager is yarn, and some scripts assume it is installed.
 
 Make sure yarn is installed:
 
-```powershell
+```bash
 npm install -g yarn
 ```
 
-Scripts:
+Clone the repo and set up dependencies
+```bash
+git clone https://github.com/Jawfish/react-typescript-template.git
+cd ./react-typescript-template
+yarn install
+```
+
+Open the Visual Studio Code workspace
+```bash
+code ./app.code-workspace
+```
+
+To install the recommended extensions, go to the Extensions side panel (Ctrl+Shift+X by default) and type `@recommended` into the search bar, then install the items that appear in the results.
+
+`package.json` scripts:
 
 ```powershell
 yarn install # install dependencies
