@@ -5,34 +5,31 @@
 		}
 	],
 	"settings": {
-		"editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint",
 		"editor.formatOnPaste": false,
 		"editor.formatOnType": false,
 		"editor.formatOnSave": true,
 		"editor.formatOnSaveMode": "file",
 		"files.autoSave": "onFocusChange",
 		"editor.insertSpaces": false,
-		"editor.tabSize": 2,
 		"[typescript]": {
-			"editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+			"editor.defaultFormatter": "dbaeumer.vscode-eslint"
 		},
 		"[typescriptreact]": {
-			"editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+			"editor.defaultFormatter": "dbaeumer.vscode-eslint"
 		},
 		"[javascript]": {
-			"editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+			"editor.defaultFormatter": "dbaeumer.vscode-eslint"
 		},
 		"[javascriptreact]": {
-			"editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+			"editor.defaultFormatter": "dbaeumer.vscode-eslint"
 		},
 	},
 	"extensions": {
 		"recommendations": [
 			"bradlc.vscode-tailwindcss",
 			"ms-vscode.vscode-typescript-next",
-			"dbaeumer.vscode-eslint",
-			"rvest.vs-code-prettier-eslint",
-			"heybourn.headwind"
+			"dbaeumer.vscode-eslint"
 		]
 	}
 }
