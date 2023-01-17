@@ -48,6 +48,12 @@ module.exports = {
 		}
 	},
 	rules: {
+		'lines-between-class-members': ['error', 'always'],
+		'padding-line-between-statements': [
+			'error',
+			{ blankLine: 'always', prev: 'var', next: 'return' }
+		],
+		'newline-before-return': 'error',
 		'import/first': 'error',
 		'import/newline-after-import': 'error',
 		'import/no-duplicates': 'error',
