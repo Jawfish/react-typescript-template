@@ -1,5 +1,15 @@
 /* eslint-disable no-undef */
 module.exports = {
+	plugins: [
+		'@typescript-eslint',
+		'prettier',
+		'import',
+		'tailwindcss',
+		'simple-import-sort',
+		'promise',
+		'react',
+		'jsx-a11y'
+	],
 	extends: [
 		'eslint:recommended',
 		'plugin:@typescript-eslint/recommended',
@@ -9,7 +19,8 @@ module.exports = {
 		'plugin:promise/recommended',
 		'plugin:react/recommended',
 		'plugin:react/jsx-runtime',
-		'plugin:react-hooks/recommended'
+		'plugin:react-hooks/recommended',
+		'plugin:jsx-a11y/recommended'
 	],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
@@ -19,15 +30,6 @@ module.exports = {
 			jsx: true
 		}
 	},
-	plugins: [
-		'@typescript-eslint',
-		'prettier',
-		'import',
-		'tailwindcss',
-		'simple-import-sort',
-		'promise',
-		'react'
-	],
 	root: true,
 	env: {
 		browser: true,
