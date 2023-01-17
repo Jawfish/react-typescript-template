@@ -16,7 +16,7 @@
     "testui": "vite --ui --open",
     "preview": "vite preview",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src tests",
-    "fix": "yarn lint --fix"
+    "fix": "eslint --ext .js,.jsx,.ts,.tsx src --fix"
   },
   "dependencies": {
     "clsx": "^1.2.1",

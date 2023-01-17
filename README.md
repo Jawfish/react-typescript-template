@@ -12,19 +12,18 @@ Provides a configured development environment with the following:
 - [Vitest](https://vitest.dev/guide/why.html), a Vite-native unit test framework with an API nearly identical to Jest
 - A VSCode workspace with recommended extensions and configuration settings for the recommended formatter
 
-The intended package manager is yarn, and some scripts assume it is installed.
 
-Make sure yarn is installed:
-
-```bash
-npm install -g yarn
-```
-
-Clone the repo and set up dependencies
+Clone the repo:
 ```bash
 git clone https://github.com/Jawfish/react-typescript-template.git
 cd ./react-typescript-template
+```
+
+Install dependencies:
+```bash
 yarn install
+# or
+npm install
 ```
 
 Open the Visual Studio Code workspace
@@ -34,15 +33,15 @@ code ./app.code-workspace
 
 To install the recommended extensions, go to the Extensions side panel (Ctrl+Shift+X by default) and type `@recommended` into the search bar, then install the items that appear in the results.
 
-`package.json` scripts:
+## `package.json` scripts:
 
-```powershell
-yarn install # install dependencies
-yarn dev # start dev server
-yarn build # build for production
-yarn test # run unit tests
-yarn testui # run unit tests with UI
-yarn lint # run linter
-yarn fix # run linter and fix errors
-yarn preview # preview production build
-```
+| Script    | Description              | Yarn Command   | NPM Command       |
+| --------- | ------------------------ | -------------- | ----------------- |
+| `install` | Install dependencies     | `yarn install` | `npm install`     |
+| `dev`     | Start vitest dev server  | `yarn dev`     | `npm run dev`     |
+| `build`   | Build for production     | `yarn build`   | `npm run build`   |
+| `test`    | Run unit tests           | `yarn test`    | `npm run test`    |
+| `testui`  | Run unit tests with UI   | `yarn testui`  | `npm run testui`  |
+| `lint`    | Run linter               | `yarn lint`    | `npm run lint`    |
+| `fix`     | Run linter and fix       | `yarn fix`     | `npm run fix`     |
+| `preview` | Preview production build | `yarn preview` | `npm run preview` |
