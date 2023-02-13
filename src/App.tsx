@@ -10,7 +10,7 @@ const exampleDiv = clsx(
 	'hover:text-zinc-600',
 	'hover:shadow-lg',
 	'transition',
-	'duration-300',
+	'duration-150',
 	'ease-in-out',
 	'rounded'
 );

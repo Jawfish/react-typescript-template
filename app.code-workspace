@@ -10,8 +10,7 @@
 		"editor.formatOnType": false,
 		"editor.formatOnSave": true,
 		"editor.formatOnSaveMode": "file",
-		"files.autoSave": "onFocusChange",
-		"editor.insertSpaces": false,
+		"editor.insertSpaces": true,
 		"[typescript]": {
 			"editor.defaultFormatter": "dbaeumer.vscode-eslint"
 		},
@@ -30,6 +29,9 @@
 			"bradlc.vscode-tailwindcss",
 			"ms-vscode.vscode-typescript-next",
 			"dbaeumer.vscode-eslint",
+		],
+		"unwantedRecommendations": [
+			"esbenp.prettier-vscode",
 			"moalamri.inline-fold"
 		]
 	}
