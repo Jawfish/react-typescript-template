@@ -5,7 +5,6 @@ module.exports = {
     'prettier',
     'import',
     'tailwindcss',
-    'simple-import-sort',
     'promise',
     'react',
     'jsx-a11y'
@@ -59,8 +58,6 @@ module.exports = {
     'import/first': 'error',
     'import/newline-after-import': 'error',
     'import/no-duplicates': 'error',
-    'simple-import-sort/exports': 'error',
-    'simple-import-sort/imports': 'error',
     'no-var': 'error',
     'no-console': 'warn',
     'promise/prefer-await-to-then': 'error',
