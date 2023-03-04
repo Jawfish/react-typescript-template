@@ -26,13 +26,6 @@ yarn install
 npm install
 ```
 
-Open the Visual Studio Code workspace
-```bash
-code ./app.code-workspace
-```
-
-To install the recommended extensions, go to the Extensions side panel (Ctrl+Shift+X by default) and type `@recommended` into the search bar, then install the items that appear in the results.
-
 ## `package.json` scripts:
 
 | Script    | Description              | Yarn Command   | NPM Command       |
@@ -45,3 +38,8 @@ To install the recommended extensions, go to the Extensions side panel (Ctrl+Shi
 | `lint`    | Run linter               | `yarn lint`    | `npm run lint`    |
 | `fix`     | Run linter and fix       | `yarn fix`     | `npm run fix`     |
 | `preview` | Preview production build | `yarn preview` | `npm run preview` |
+
+## Development
+This project makes use of Visual Studio Code's dev container feature. This allows you to develop in a containerized environment, which means you don't have to worry about installing dependencies on your machine. You can read more about dev containers [here](https://code.visualstudio.com/docs/remote/containers).
+
+To get started, open the project in VSCode and click the "Reopen in Container" button in the lower right corner of the window. This will open the project in a containerized environment. If you miss the popup, open the command palette (Ctrl+Shift+P by default) and search for "Remote-Containers: Reopen in Container".
