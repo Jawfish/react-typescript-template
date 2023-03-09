@@ -12,7 +12,7 @@
     "dev": "vite",
     "build": "tsc && yarn fix && vite build",
     "test": "vitest -r tests",
-    "testui": "vite --ui --open",
+    "testui": "vitest --ui --open",
     "preview": "vite preview",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src",
     "fix": "eslint --ext .js,.jsx,.ts,.tsx src --fix"
