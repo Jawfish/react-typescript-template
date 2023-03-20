@@ -10,7 +10,7 @@ Provides a configured development environment with the following:
 - Sass
 - [Vite](https://vitejs.dev/guide/why.html), a dev server
 - [Vitest](https://vitest.dev/guide/why.html), a Vite-native unit test framework with an API nearly identical to Jest
-- A VSCode workspace with recommended extensions and configuration settings for the recommended formatter
+- A VSCode development container with recommended extensions and configuration settings for the recommended formatter
 
 
 Clone the repo:
@@ -31,7 +31,7 @@ npm install
 | Script    | Description              | Yarn Command   | NPM Command       |
 | --------- | ------------------------ | -------------- | ----------------- |
 | `install` | Install dependencies     | `yarn install` | `npm install`     |
-| `dev`     | Start vitest dev server  | `yarn dev`     | `npm run dev`     |
+| `dev`     | Start vite dev server  | `yarn dev`     | `npm run dev`     |
 | `build`   | Build for production     | `yarn build`   | `npm run build`   |
 | `test`    | Run unit tests           | `yarn test`    | `npm run test`    |
 | `testui`  | Run unit tests with UI   | `yarn testui`  | `npm run testui`  |
