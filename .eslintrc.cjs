@@ -7,7 +7,8 @@ module.exports = {
     'tailwindcss',
     'promise',
     'react',
-    'jsx-a11y'
+    'jsx-a11y',
+    'unused-imports'
   ],
   extends: [
     'eslint:recommended',
@@ -46,9 +47,15 @@ module.exports = {
     },
     react: {
       version: 'detect'
+    },
+    tailwindcss: {
+      config: './tailwind.config.cjs'
     }
   },
   rules: {
+    // handled by unused-imports plugin
+    '@typescript-eslint/no-unused-vars': 'off',
+    'unused-imports/no-unused-imports': 'warn',
     'lines-between-class-members': ['error', 'always'],
     'padding-line-between-statements': [
       'error',

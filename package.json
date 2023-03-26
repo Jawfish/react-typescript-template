@@ -1,37 +1,24 @@
 {
-  "name": "react-typescript-template",
-  "private": false,
-  "version": "0.0.1",
-  "license": "MIT",
-  "type": "module",
   "author": {
-    "name": "James Fitzgerald",
-    "email": "james@jawfish.dev"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && yarn fix && vite build",
-    "test": "vitest -r tests",
-    "testui": "vitest --ui --open",
-    "preview": "vite preview",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx src",
-    "fix": "eslint --ext .js,.jsx,.ts,.tsx src --fix"
+    "email": "james@jawfish.dev",
+    "name": "James Fitzgerald"
   },
   "dependencies": {
     "clsx": "^1.2.1",
+    "eslint-plugin-unused-imports": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.28",
+    "@types/react": "^18.0.29",
     "@types/react-dom": "^18.0.11",
-    "@typescript-eslint/eslint-plugin": "^5.54.0",
-    "@typescript-eslint/parser": "^5.54.0",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
     "@vitejs/plugin-react": "^2.2.0",
     "@vitest/ui": "^0.23.4",
-    "autoprefixer": "^10.4.13",
-    "eslint": "^8.35.0",
-    "eslint-config-prettier": "^8.6.0",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.8.0",
     "eslint-import-resolver-typescript": "^3.5.3",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",
@@ -41,11 +28,24 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-tailwindcss": "^3.10.1",
     "postcss": "^8.4.21",
-    "prettier": "^2.8.4",
-    "sass": "^1.58.3",
+    "prettier": "^2.8.7",
+    "sass": "^1.60.0",
     "tailwindcss": "^3.2.7",
     "typescript": "^4.9.5",
     "vite": "^3.2.5",
     "vitest": "^0.23.4"
-  }
+  },
+  "license": "MIT",
+  "name": "react-typescript-template",
+  "scripts": {
+    "build": "tsc && yarn fix && vite build",
+    "dev": "vite",
+    "lint": "eslint --ext .ts,.tsx src",
+    "lint:fix": "eslint --ext .ts,.tsx src --fix",
+    "preview": "vite preview",
+    "test": "vitest -r tests",
+    "test:ui": "vitest --ui --open"
+  },
+  "type": "module",
+  "version": "0.0.1"
 }
