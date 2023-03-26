@@ -28,7 +28,7 @@ npm install
 
 ## `package.json` scripts:
 
-| Script    | Description NPM Command  |
+| Script    | Description NPM Command  | Command            |
 | --------- | ------------------------ | ------------------ |
 | `install` | Install dependencies     | `npm install`      |
 | `dev`     | Start vite dev server    | `npm run dev`      |
