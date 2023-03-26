@@ -28,16 +28,16 @@ npm install
 
 ## `package.json` scripts:
 
-| Script    | Description NPM Command  | Command            |
-| --------- | ------------------------ | ------------------ |
-| `install` | Install dependencies     | `npm install`      |
-| `dev`     | Start vite dev server    | `npm run dev`      |
-| `build`   | Build for production     | `npm run build`    |
-| `test`    | Run unit tests           | `npm run test`     |
-| `testui`  | Run unit tests with UI   | `npm run test:ui`  |
-| `lint`    | Run linter               | `npm run lint`     |
-| `fix`     | Run linter and fix       | `npm run lint:fix` |
-| `preview` | Preview production build | `npm run preview`  |
+| Script     | Description NPM Command  | Command            |
+| ---------- | ------------------------ | ------------------ |
+| `install`  | Install dependencies     | `npm install`      |
+| `dev`      | Start vite dev server    | `npm run dev`      |
+| `build`    | Build for production     | `npm run build`    |
+| `test`     | Run unit tests           | `npm run test`     |
+| `test:ui`  | Run unit tests with UI   | `npm run test:ui`  |
+| `lint`     | Run linter               | `npm run lint`     |
+| `lint:fix` | Run linter and fix       | `npm run lint:fix` |
+| `preview`  | Preview production build | `npm run preview`  |
 
 ## Development
 
