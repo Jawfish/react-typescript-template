@@ -41,6 +41,8 @@ npm install
 
 ## Development
 
-This project provides a development container using Visual Studio Code's container feature. This allows you to develop in a containerized environment, which means you don't have to worry about installing dependencies on your main OS. You can read more about dev containers [here](https://code.visualstudio.com/docs/remote/containers).
+This project utilizes Visual Studio Code's container feature to provide a development container for your convenience. Development containers allow you to develop in a containerized environment so that you don't have to worry about installing dependencies on your main operating system. You can read more about them [here](https://code.visualstudio.com/docs/remote/containers).
 
-To use the feature, you must have the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension. Then, open the project in VSCode and click the "Reopen in Container" button in the lower right corner of the window. This will open the project in a containerized environment. If you miss the popup, open the command palette (Ctrl+Shift+P by default) and search for "Remote-Containers: Reopen in Container".
+To use the feature, you must install the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension. Then, open the project and click the 'Reopen in Container' button in the lower-right corner of the window. If you miss the popup, open the command palette (Ctrl+Shift+P by default) and search for 'Remote-Containers: Reopen in Container'.
+
+Note: The development container is included to help start new projects using this template. It's useful for projects that benefit from a development container, but overkill for the template itself.
