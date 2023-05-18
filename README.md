@@ -27,7 +27,7 @@ Install dependencies:
 npm install
 ```
 
-## `package.json` scripts:
+## `package.json` scripts
 
 | Script     | Description NPM Command  | Command            |
 | ---------- | ------------------------ | ------------------ |
