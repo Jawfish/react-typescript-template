@@ -8,7 +8,8 @@ module.exports = {
     'promise',
     'react',
     'jsx-a11y',
-    'unused-imports'
+    'unused-imports',
+    'check-file'
   ],
   extends: [
     'eslint:recommended',
@@ -123,6 +124,26 @@ module.exports = {
           }
         ],
         'newlines-between': 'always'
+      }
+    ],
+    'check-file/filename-naming-convention': [
+      'error',
+      {
+        'src/**/!(*.test).{jsx,tsx,js,ts}': 'CAMEL_CASE'
+      }
+    ],
+    'check-file/no-index': 'error',
+    'check-file/folder-naming-convention': [
+      'error',
+      {
+        'src/**/': 'CAMEL_CASE'
+      }
+    ],
+    'check-file/filename-blocklist': [
+      'error',
+      {
+        '**/*.model.ts': '*.models.ts',
+        '**/*.util.ts': '*.utils.ts'
       }
     ]
   }

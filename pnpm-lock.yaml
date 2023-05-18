@@ -48,6 +48,9 @@ devDependencies:
   eslint-import-resolver-typescript:
     specifier: ^3.5.5
     version: 3.5.5(@typescript-eslint/parser@5.58.0)(eslint-plugin-import@2.27.5)(eslint@8.38.0)
+  eslint-plugin-check-file:
+    specifier: ^2.3.0
+    version: 2.3.0(eslint@8.38.0)
   eslint-plugin-import:
     specifier: ^2.27.5
     version: 2.27.5(@typescript-eslint/parser@5.58.0)(eslint-import-resolver-typescript@3.5.5)(eslint@8.38.0)
@@ -1493,6 +1496,18 @@ packages:
       - supports-color
     dev: true
 
+  /eslint-plugin-check-file@2.3.0(eslint@8.38.0):
+    resolution: {integrity: sha512-oTaKN2bdBJO8YpiuixhRgQwIPI3gXKHrgYWhO3POsXuwcXimPXUTqhgbPZpdndpgdD9GJn61y1F2s4S4Z0/xxA==}
+    engines: {node: 14.x || >= 16}
+    peerDependencies:
+      eslint: '>=7.28.0'
+    dependencies:
+      eslint: 8.38.0
+      is-glob: 4.0.3
+      micromatch: 4.0.5
+      requireindex: 1.2.0
+    dev: true
+
   /eslint-plugin-import@2.27.5(@typescript-eslint/parser@5.58.0)(eslint-import-resolver-typescript@3.5.5)(eslint@8.38.0):
     resolution: {integrity: sha512-LmEt3GVofgiGuiE+ORpnvP+kAm3h6MLZJ4Q5HCyHADofsb4VzXFsRiWj3c0OFiV+3DWFh0qg3v9gcPlfc3zRow==}
     engines: {node: '>=4'}
@@ -2707,6 +2722,11 @@ packages:
       call-bind: 1.0.2
       define-properties: 1.2.0
       functions-have-names: 1.2.3
+    dev: true
+
+  /requireindex@1.2.0:
+    resolution: {integrity: sha512-L9jEkOi3ASd9PYit2cwRfyppc9NoABujTP8/5gFcbERmo5jUoAKovIC3fsF17pkTnGsrByysqX+Kxd2OTNI1ww==}
+    engines: {node: '>=0.10.5'}
     dev: true
 
   /resolve-from@4.0.0:

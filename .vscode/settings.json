@@ -14,8 +14,5 @@
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.insertSpaces": true,
   "eslint.format.enable": true,
-  "tailwindCSS.experimental.configFile": "tailwind.config.cjs",
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  "tailwindCSS.experimental.configFile": "tailwind.config.cjs"
 }
