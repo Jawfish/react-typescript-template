@@ -129,7 +129,7 @@ module.exports = {
     'check-file/filename-naming-convention': [
       'error',
       {
-        'src/**/!(*.test).{jsx,tsx,js,ts}': 'CAMEL_CASE'
+        'src/**/!((*.test)|(vite-env.d.ts).{jsx,tsx,js,ts}': 'CAMEL_CASE'
       }
     ],
     'check-file/no-index': 'error',
