@@ -17,8 +17,8 @@ const exampleDiv = clsx(
 
 function App() {
   return (
-    <div className="flex h-screen place-items-center bg-zinc-50">
-      <div className="mx-auto grid grid-cols-3 gap-6 rounded bg-zinc-100 p-6 text-center text-zinc-500">
+    <div className='flex h-screen place-items-center bg-zinc-50'>
+      <div className='mx-auto grid grid-cols-3 gap-6 rounded bg-zinc-100 p-6 text-center text-zinc-500'>
         {[...Array(9)].map((_, i) => (
           <div className={exampleDiv} key={i} />
         ))}

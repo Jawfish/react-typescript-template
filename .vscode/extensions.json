@@ -1,9 +1,9 @@
 {
   "recommendations": [
-    "dbaeumer.vscode-eslint",
+    "biomejs.biome",
     "bradlc.vscode-tailwindcss",
     "ms-vscode.vscode-typescript-next",
-    "esbenp.prettier-vscode",
+    "oven.bun-vscode",
     "sibiraj-s.vscode-scss-formatter"
   ]
 }
