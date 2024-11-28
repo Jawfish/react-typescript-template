@@ -5,8 +5,7 @@ Provides a configured development environment with the following:
 - React
 - TypeScript
 - Tailwind
-- ESLint
-- Prettier
+- Biome
 - Sass
 - [Zustand](https://github.com/pmndrs/zustand) for state management
 - [Vite](https://vitejs.dev/guide/why.html), a dev server
@@ -30,12 +29,12 @@ npm install
 
 | Script     | Description              | Command            |
 | ---------- | ------------------------ | ------------------ |
-| `install`  | Install dependencies     | `npm install`      |
-| `dev`      | Start vite dev server    | `npm run dev`      |
-| `build`    | Build for production     | `npm run build`    |
-| `test`     | Run unit tests           | `npm run test`     |
-| `test:ui`  | Run unit tests with UI   | `npm run test:ui`  |
-| `lint`     | Run linter               | `npm run lint`     |
-| `lint:fix` | Run linter and fix       | `npm run lint:fix` |
-| `preview`  | Preview production build | `npm run preview`  |
+| `install`  | Install dependencies     | `bun install`      |
+| `dev`      | Start vite dev server    | `bun dev`          |
+| `build`    | Build for production     | `bun build`        |
+| `test`     | Run unit tests           | `bun test`         |
+| `test:ui`  | Run unit tests with UI   | `bun test:ui`      |
+| `lint`     | Run linter               | `bun lint`         |
+| `fix`      | Run linter and fix       | `bun fix`          |
+| `preview`  | Preview production build | `bun preview`      |
 
