@@ -1,27 +1,41 @@
-import clsx from 'clsx';
-
-const exampleDiv = clsx(
-  'bg-zinc-200',
-  'p-6',
-  'text-2xl',
-  'font-bold',
-  'hover:cursor-pointer',
-  'hover:bg-zinc-300',
-  'hover:text-zinc-600',
-  'hover:shadow-lg',
-  'transition',
-  'duration-150',
-  'ease-in-out',
-  'rounded'
-);
-
+import { Button } from './components/shadcn/ui/button';
+import { toast } from 'sonner';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger
+} from '@/components/shadcn/ui/tooltip';
 function App() {
+  const handleSonnerClick = () => {
+    toast('Other Button Clicked', {
+      description: 'You have clicked the other button',
+      position: 'bottom-left'
+    });
+  };
+
+  const handleClick = () => {
+    toast('Button Clicked', {
+      description: 'You have clicked the button',
+      action: {
+        label: 'Click Me',
+        onClick: handleSonnerClick
+      }
+    });
+  };
+
   return (
-    <div className='flex h-screen place-items-center bg-zinc-50'>
-      <div className='mx-auto grid grid-cols-3 gap-6 rounded bg-zinc-100 p-6 text-center text-zinc-500'>
-        {[...Array(9)].map((_, i) => (
-          <div className={exampleDiv} key={i} />
-        ))}
+    <div className='flex h-screen place-items-center bg-neutral-50'>
+      <div className='mx-auto'>
+        <Tooltip delayDuration={150}>
+          <TooltipTrigger asChild>
+            <Button className='hover:cursor-pointer' onClick={handleClick}>
+              Button
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent>
+            <p>Try clicking me multiple times</p>
+          </TooltipContent>
+        </Tooltip>
       </div>
     </div>
   );

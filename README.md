@@ -22,7 +22,7 @@ cd ./react-typescript-template
 Install dependencies:
 
 ```bash
-npm install
+bun install
 ```
 
 ## `package.json` scripts
