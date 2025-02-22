@@ -1,10 +1,10 @@
-import { Button } from './components/shadcn/ui/button';
-import { toast } from 'sonner';
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger
 } from '@/components/shadcn/ui/tooltip';
+import { toast } from 'sonner';
+import { Button } from './components/shadcn/ui/button';
 function App() {
   const handleSonnerClick = () => {
     toast('Other Button Clicked', {
@@ -24,7 +24,7 @@ function App() {
   };
 
   return (
-    <div className='flex h-screen place-items-center bg-neutral-50'>
+    <div className='flex h-screen place-items-center bg-background'>
       <div className='mx-auto'>
         <Tooltip delayDuration={150}>
           <TooltipTrigger asChild>

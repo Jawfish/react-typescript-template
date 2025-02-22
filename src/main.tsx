@@ -3,9 +3,9 @@ import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import App from './app';
-import { Toaster } from 'sonner';
 import { TooltipProvider } from '@/components/shadcn/ui/tooltip';
+import { Toaster } from 'sonner';
+import App from './app';
 
 ReactDOM.createRoot(document.querySelector('#root')!).render(
   <React.StrictMode>
