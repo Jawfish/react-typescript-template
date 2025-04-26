@@ -1,11 +1,17 @@
+import { createFileRoute } from '@tanstack/react-router';
+
+import { Button } from '@/components/shadcn/ui/button';
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger
 } from '@/components/shadcn/ui/tooltip';
 import { toast } from 'sonner';
-import { Button } from './components/shadcn/ui/button';
-function App() {
+export const Route = createFileRoute('/')({
+  component: RouteComponent
+});
+
+function RouteComponent() {
   const handleSonnerClick = () => {
     toast('Other Button Clicked', {
       description: 'You have clicked the other button',
@@ -40,5 +46,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

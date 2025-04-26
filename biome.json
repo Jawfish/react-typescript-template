@@ -1,7 +1,7 @@
 {
   "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
   "files": {
-    "ignore": [],
+    "ignore": ["src/routeTree.gen.ts"],
     "ignoreUnknown": false
   },
   "formatter": {
@@ -165,7 +165,8 @@
             "noSetterReturn": "off",
             "noUndeclaredVariables": "off",
             "noUnreachable": "off",
-            "noUnreachableSuper": "off"
+            "noUnreachableSuper": "off",
+            "noUnusedImports": "warn"
           },
           "style": {
             "noArguments": "error",
