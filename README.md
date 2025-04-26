@@ -6,10 +6,11 @@ Provides a configured development environment with the following:
 - TypeScript
 - Tailwind
 - Shadcn
+- TanStack Router
 - Biome
-- [Zustand](https://github.com/pmndrs/zustand) for state management
-- [Vite](https://vitejs.dev/guide/why.html), a dev server
-- [Vitest](https://vitest.dev/guide/why.html), a Vite-native unit test framework with an API nearly identical to Jest
+- [Zustand](https://github.com/pmndrs/zustand)
+- [Vite](https://vitejs.dev/guide/why.html)
+- [Vitest](https://vitest.dev/guide/why.html)
 - A VSCode workspace with recommended extensions and configuration settings
 
 Clone the repo:
