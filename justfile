@@ -1,7 +1,8 @@
-# Run code formatter
+dev:
+    bun dev
+
 fix:
     bun fix
 
-# Run tests
 test:
     bun test
