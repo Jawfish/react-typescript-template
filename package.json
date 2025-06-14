@@ -42,7 +42,7 @@
   "scripts": {
     "build": "tsc && bun fix && vite build",
     "dev": "vite",
-    "fix": "biome check --write",
+    "fix": "biome check --unsafe --write",
     "lint": "biome check",
     "preview": "vite preview",
     "test": "vitest -r tests",
