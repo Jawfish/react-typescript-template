@@ -1,10 +1,10 @@
 import './index.css';
-import { RouterProvider, createRouter } from '@tanstack/react-router';
-import ReactDOM from 'react-dom/client';
-import { routeTree } from './routeTree.gen';
-import * as React from 'react';
 import { TooltipProvider } from '@/components/shadcn/ui/tooltip';
+import { RouterProvider, createRouter } from '@tanstack/react-router';
+import * as React from 'react';
+import ReactDOM from 'react-dom/client';
 import { Toaster } from 'sonner';
+import { routeTree } from './routeTree.gen';
 
 const router = createRouter({
   routeTree,

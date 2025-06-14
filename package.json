@@ -50,5 +50,11 @@
   },
   "type": "module",
   "version": "0.0.1",
-  "trustedDependencies": ["@biomejs/biome", "@parcel/watcher", "@tailwindcss/oxide", "core-js", "esbuild"]
+  "trustedDependencies": [
+    "@biomejs/biome",
+    "@parcel/watcher",
+    "@tailwindcss/oxide",
+    "core-js",
+    "esbuild"
+  ]
 }
