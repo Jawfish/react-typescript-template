@@ -1,0 +1,68 @@
+[
+  {
+    "label": "dev",
+    "command": "just dev",
+    "use_new_terminal": true,
+    "allow_concurrent_runs": false,
+    "tags": [
+      "dev"
+    ]
+  },
+  {
+    "label": "fix",
+    "command": "just fix",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "hide": "on_success",
+    "tags": [
+      "lint"
+    ]
+  },
+  {
+    "label": "test",
+    "command": "just test",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": true,
+    "hide": "on_success",
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "label": "build",
+    "command": "bun run build",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "tags": [
+      "build"
+    ]
+  },
+  {
+    "label": "lint",
+    "command": "bun run lint",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "hide": "on_success",
+    "tags": [
+      "lint"
+    ]
+  },
+  {
+    "label": "test:ui",
+    "command": "bun run test:ui",
+    "use_new_terminal": true,
+    "allow_concurrent_runs": false,
+    "tags": [
+      "test"
+    ]
+  },
+  {
+    "label": "preview",
+    "command": "bun run preview",
+    "use_new_terminal": true,
+    "allow_concurrent_runs": false,
+    "tags": [
+      "dev"
+    ]
+  }
+]
