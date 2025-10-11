@@ -9,3 +9,6 @@ fix:
 
 test:
     bun test
+
+coverage:
+    bun coverage

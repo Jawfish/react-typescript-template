@@ -16,7 +16,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "cd \"$CLAUDE_PROJECT_DIR\" && (just fix && just test) >&2 || exit 2"
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && (just fix && just coverage) >&2 || exit 2"
           }
         ]
       }
