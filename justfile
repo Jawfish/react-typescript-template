@@ -1,5 +1,8 @@
 dev:
-    bun dev
+    docker compose up -d
+
+down:
+    docker compose down
 
 lint:
     bun lint
