@@ -1,12 +1,11 @@
 import { createFileRoute } from '@tanstack/react-router';
-
+import { toast } from 'sonner';
 import { Button } from '@/components/shadcn/ui/button';
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger
 } from '@/components/shadcn/ui/tooltip';
-import { toast } from 'sonner';
 export const Route = createFileRoute('/')({
   component: RouteComponent
 });

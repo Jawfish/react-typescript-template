@@ -1,7 +1,7 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.2.5/schema.json",
   "files": {
-    "ignore": ["src/routeTree.gen.ts"],
+    "includes": ["**", "!**/src/routeTree.gen.ts"],
     "ignoreUnknown": false
   },
   "formatter": {
@@ -35,7 +35,6 @@
         "noAccessKey": "error",
         "noAriaUnsupportedElements": "error",
         "noAutofocus": "error",
-        "noBlankTarget": "error",
         "noDistractingElements": "error",
         "noHeaderScope": "error",
         "noInteractiveElementToNoninteractiveRole": "error",
@@ -64,10 +63,10 @@
       "complexity": {
         "noBannedTypes": "error",
         "noExtraBooleanCast": "error",
-        "noMultipleSpacesInRegularExpressionLiterals": "error",
         "noUselessCatch": "error",
         "noUselessTypeConstraint": "error",
-        "noWith": "error"
+        "noAdjacentSpacesInRegex": "error",
+        "noArguments": "warn"
       },
       "correctness": {
         "noChildrenProp": "error",
@@ -79,7 +78,6 @@
         "noInnerDeclarations": "error",
         "noInvalidBuiltinInstantiation": "error",
         "noInvalidConstructorSuper": "error",
-        "noNewSymbol": "error",
         "noNonoctalDecimalEscape": "error",
         "noPrecisionLoss": "error",
         "noSelfAssign": "error",
@@ -93,27 +91,27 @@
         "noUnusedLabels": "error",
         "noUnusedPrivateClassMembers": "error",
         "noUnusedVariables": "error",
-        "useArrayLiterals": "off",
         "useExhaustiveDependencies": "warn",
         "useHookAtTopLevel": "error",
         "useIsNan": "error",
         "useJsxKeyInIterable": "error",
         "useValidForDirection": "error",
-        "useYield": "error"
+        "useYield": "error",
+        "useValidTypeof": "error"
       },
       "recommended": false,
       "security": {
-        "noDangerouslySetInnerHtmlWithChildren": "error"
+        "noDangerouslySetInnerHtmlWithChildren": "error",
+        "noBlankTarget": "error"
       },
       "style": {
-        "noArguments": "warn",
         "noNamespace": "error",
         "noNonNullAssertion": "off",
-        "noVar": "error",
         "noYodaExpression": "error",
         "useAsConstAssertion": "error",
         "useConst": "error",
-        "useTemplate": "error"
+        "useTemplate": "error",
+        "useArrayLiterals": "off"
       },
       "suspicious": {
         "noAsyncPromiseExecutor": "error",
@@ -145,32 +143,29 @@
         "noUnsafeDeclarationMerging": "error",
         "noUnsafeNegation": "error",
         "useGetterReturn": "error",
-        "useValidTypeof": "error"
+        "noWith": "error",
+        "noVar": "error"
       }
     }
   },
-  "organizeImports": {
-    "enabled": true
-  },
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
   "overrides": [
     {
-      "include": ["*.ts", "*.tsx", "*.mts", "*.cts"],
+      "includes": ["**/*.ts", "**/*.tsx", "**/*.mts", "**/*.cts"],
       "linter": {
         "rules": {
           "correctness": {
             "noConstAssign": "off",
             "noGlobalObjectCalls": "off",
             "noInvalidConstructorSuper": "off",
-            "noNewSymbol": "off",
             "noSetterReturn": "off",
             "noUndeclaredVariables": "off",
             "noUnreachable": "off",
             "noUnreachableSuper": "off",
-            "noUnusedImports": "warn"
+            "noUnusedImports": "warn",
+            "noInvalidBuiltinInstantiation": "off"
           },
           "style": {
-            "noArguments": "error",
-            "noVar": "error",
             "useConst": "error"
           },
           "suspicious": {
@@ -181,28 +176,30 @@
             "noImportAssign": "off",
             "noRedeclare": "off",
             "noUnsafeNegation": "off",
-            "useGetterReturn": "off"
+            "useGetterReturn": "off",
+            "noVar": "error"
+          },
+          "complexity": {
+            "noArguments": "error"
           }
         }
       }
     },
     {
-      "include": ["*.ts", "*.tsx", "*.mts", "*.cts"],
+      "includes": ["**/*.ts", "**/*.tsx", "**/*.mts", "**/*.cts"],
       "linter": {
         "rules": {
           "correctness": {
             "noConstAssign": "off",
             "noGlobalObjectCalls": "off",
             "noInvalidConstructorSuper": "off",
-            "noNewSymbol": "off",
             "noSetterReturn": "off",
             "noUndeclaredVariables": "off",
             "noUnreachable": "off",
-            "noUnreachableSuper": "off"
+            "noUnreachableSuper": "off",
+            "noInvalidBuiltinInstantiation": "off"
           },
           "style": {
-            "noArguments": "error",
-            "noVar": "error",
             "useConst": "error"
           },
           "suspicious": {
@@ -213,28 +210,30 @@
             "noImportAssign": "off",
             "noRedeclare": "off",
             "noUnsafeNegation": "off",
-            "useGetterReturn": "off"
+            "useGetterReturn": "off",
+            "noVar": "error"
+          },
+          "complexity": {
+            "noArguments": "error"
           }
         }
       }
     },
     {
-      "include": ["*.ts", "*.tsx", "*.mts", "*.cts"],
+      "includes": ["**/*.ts", "**/*.tsx", "**/*.mts", "**/*.cts"],
       "linter": {
         "rules": {
           "correctness": {
             "noConstAssign": "off",
             "noGlobalObjectCalls": "off",
             "noInvalidConstructorSuper": "off",
-            "noNewSymbol": "off",
             "noSetterReturn": "off",
             "noUndeclaredVariables": "off",
             "noUnreachable": "off",
-            "noUnreachableSuper": "off"
+            "noUnreachableSuper": "off",
+            "noInvalidBuiltinInstantiation": "off"
           },
           "style": {
-            "noArguments": "error",
-            "noVar": "error",
             "useConst": "error"
           },
           "suspicious": {
@@ -245,7 +244,11 @@
             "noImportAssign": "off",
             "noRedeclare": "off",
             "noUnsafeNegation": "off",
-            "useGetterReturn": "off"
+            "useGetterReturn": "off",
+            "noVar": "error"
+          },
+          "complexity": {
+            "noArguments": "error"
           }
         }
       }
