@@ -4,9 +4,7 @@
     "command": "just dev",
     "use_new_terminal": true,
     "allow_concurrent_runs": false,
-    "tags": [
-      "dev"
-    ]
+    "tags": ["dev"]
   },
   {
     "label": "fix",
@@ -14,9 +12,7 @@
     "use_new_terminal": false,
     "allow_concurrent_runs": false,
     "hide": "on_success",
-    "tags": [
-      "lint"
-    ]
+    "tags": ["lint"]
   },
   {
     "label": "test",
@@ -24,18 +20,14 @@
     "use_new_terminal": false,
     "allow_concurrent_runs": true,
     "hide": "on_success",
-    "tags": [
-      "test"
-    ]
+    "tags": ["test"]
   },
   {
     "label": "build",
     "command": "bun run build",
     "use_new_terminal": false,
     "allow_concurrent_runs": false,
-    "tags": [
-      "build"
-    ]
+    "tags": ["build"]
   },
   {
     "label": "lint",
@@ -43,26 +35,20 @@
     "use_new_terminal": false,
     "allow_concurrent_runs": false,
     "hide": "on_success",
-    "tags": [
-      "lint"
-    ]
+    "tags": ["lint"]
   },
   {
     "label": "test:ui",
     "command": "bun run test:ui",
     "use_new_terminal": true,
     "allow_concurrent_runs": false,
-    "tags": [
-      "test"
-    ]
+    "tags": ["test"]
   },
   {
     "label": "preview",
     "command": "bun run preview",
     "use_new_terminal": true,
     "allow_concurrent_runs": false,
-    "tags": [
-      "dev"
-    ]
+    "tags": ["dev"]
   }
 ]
