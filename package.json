@@ -22,7 +22,7 @@
     "@tailwindcss/cli": "^4.1.14",
     "@tailwindcss/postcss": "^4.1.14",
     "@tailwindcss/vite": "^4.1.14",
-    "@tanstack/router-plugin": "^1.132.51",
+    "@tanstack/router-plugin": "^1.132.56",
     "@types/node": "^24.7.2",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.1",
