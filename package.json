@@ -6,7 +6,7 @@
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
     "@radix-ui/react-tooltip": "^1.2.8",
-    "@tanstack/react-router": "^1.134.4",
+    "@tanstack/react-router": "^1.134.9",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.552.0",
@@ -22,7 +22,7 @@
     "@tailwindcss/cli": "^4.1.16",
     "@tailwindcss/postcss": "^4.1.16",
     "@tailwindcss/vite": "^4.1.16",
-    "@tanstack/router-plugin": "^1.134.6",
+    "@tanstack/router-plugin": "^1.134.9",
     "@types/node": "^24.9.2",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
