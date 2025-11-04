@@ -4,7 +4,7 @@
     "name": "James Fitzgerald"
   },
   "dependencies": {
-    "@radix-ui/react-slot": "^1.2.3",
+    "@radix-ui/react-slot": "^1.2.4",
     "@radix-ui/react-tooltip": "^1.2.8",
     "@tanstack/react-router": "^1.134.12",
     "class-variance-authority": "^0.7.1",
