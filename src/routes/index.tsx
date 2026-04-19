@@ -1,5 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router';
 import { toast } from 'sonner';
+
 import { Button } from '@/components/shadcn/ui/button';
 import {
   Tooltip,
@@ -29,7 +30,7 @@ function RouteComponent() {
   };
 
   return (
-    <div className='flex h-screen place-items-center bg-background'>
+    <div className='bg-background flex h-screen place-items-center'>
       <div className='mx-auto'>
         <Tooltip delayDuration={150}>
           <TooltipTrigger asChild>

@@ -3,7 +3,9 @@ import { createRouter, RouterProvider } from '@tanstack/react-router';
 import * as React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Toaster } from 'sonner';
+
 import { TooltipProvider } from '@/components/shadcn/ui/tooltip';
+
 import { routeTree } from './routeTree.gen';
 
 const router = createRouter({

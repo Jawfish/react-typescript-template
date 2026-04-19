@@ -4,9 +4,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Template Repository
 
-This is a React + TypeScript + shadcn + Tailwind project. Zustand is available for state management and Vitest for tests. Focus on conventions and paradigms that make the codebase maintainable and testable.
+This is a React + TypeScript + shadcn + Tailwind project built on Vite+. Zustand is available for state management and Vitest (via `vp test`) for tests. Focus on conventions and paradigms that make the codebase maintainable and testable.
 
 ## Commands
+
+All toolchain operations run through `vp` (Vite+). `vp` delegates package management to `bun` (declared in `packageManager`).
 
 ### Docker
 
@@ -14,19 +16,30 @@ This is a React + TypeScript + shadcn + Tailwind project. Zustand is available f
 - `docker compose up -d` - Start in detached mode
 - `docker compose down` - Stop and remove containers
 
+### Development
+
+- `vp install` - Install dependencies
+- `vp dev` - Run the dev server
+- `vp build` - Production build
+- `vp preview` - Preview the production build
+- `vp check` - Run format, lint, and type checks (use `--fix` to auto-fix)
+- `vp lint` / `vp fmt` - Run lint or format individually
+
 ### Testing
 
-- `bun test` - Run vitest in watch mode
-- `bun coverage` - Run tests with coverage report
+- `vp test` - Run tests (watch mode by default)
+- `vp run coverage` - Run tests with coverage report
   - Coverage enforces 100% on all `.ts` files (not `.tsx`)
   - Excludes: test files, generated files, type definitions, `src/lib/shadcn/**`
   - Output shows uncovered line numbers when thresholds fail
+- `vp run test:ui` - Open the Vitest UI
 
 ### Justfile Shortcuts
 
-- `just fix`
-- `just test`
-- `just coverage`
+- `just lint` - `vp lint`
+- `just fix` - `vp check --fix`
+- `just test` - `vp test`
+- `just coverage` - `vp run coverage`
 
 ## Type System
 
@@ -35,10 +48,10 @@ This is a React + TypeScript + shadcn + Tailwind project. Zustand is available f
 Use branded types from `src/lib/brand.ts` to avoid primitive obsession:
 
 ```typescript
-import type { Branded } from "@/lib/brand";
+import type { Branded } from '@/lib/brand';
 
-type UserId = Branded<string, "UserId">;
-type Email = Branded<string, "Email">;
+type UserId = Branded<string, 'UserId'>;
+type Email = Branded<string, 'Email'>;
 
 // This prevents accidentally using a string where a UserId is expected
 function getUser(id: UserId) {
@@ -81,16 +94,16 @@ export function isValidEmail(email: string): boolean {
 
 ```typescript
 // src/lib/validation.test.ts
-import { describe, expect, test } from "vitest";
-import { isValidEmail } from "./validation";
+import { describe, expect, test } from 'vite-plus/test';
+import { isValidEmail } from './validation';
 
-describe("isValidEmail", () => {
-  test("valid email returns true", () => {
-    expect(isValidEmail("user@example.com")).toBe(true);
+describe('isValidEmail', () => {
+  test('valid email returns true', () => {
+    expect(isValidEmail('user@example.com')).toBe(true);
   });
 
-  test("invalid email returns false", () => {
-    expect(isValidEmail("invalid")).toBe(false);
+  test('invalid email returns false', () => {
+    expect(isValidEmail('invalid')).toBe(false);
   });
 });
 ```
@@ -110,12 +123,12 @@ Use plain English descriptions following the ACE pattern (Action, Condition, Exp
 
 ```typescript
 // Good: Describes behavior in plain English
-test("user with empty email is rejected");
-test("order total includes tax for california residents");
+test('user with empty email is rejected');
+test('order total includes tax for california residents');
 
 // Bad: Includes implementation details
-test("validateUser_emptyEmail_returnsFalse");
-test("test_calculate_tax_for_ca");
+test('validateUser_emptyEmail_returnsFalse');
+test('test_calculate_tax_for_ca');
 ```
 
 ## Project Structure
@@ -132,8 +145,8 @@ test("test_calculate_tax_for_ca");
 The `@` alias maps to `src/`:
 
 ```typescript
-import { Branded } from "@/lib/brand";
-import { Button } from "@/components/shadcn/ui/button";
+import { Branded } from '@/lib/brand';
+import { Button } from '@/components/shadcn/ui/button';
 ```
 
 ## Hooks
@@ -150,10 +163,10 @@ This repository has Claude Code hooks configured:
 
 This template uses modern tools over legacy alternatives:
 
-- **bun** over npm/yarn/pnpm
-- **biome** over eslint/prettier
-- **vitest** over jest
-- **vite** over webpack/parcel
+- **vite+** consolidates dev server, build, test, lint, format, and task runner
+- **oxlint / oxfmt** (via `vp lint` / `vp fmt`) over eslint/prettier/biome
+- **bun** over npm/yarn/pnpm (as the underlying package manager behind `vp install`)
+- **vitest** (via `vp test`) over jest
 - **v8 coverage** over istanbul
 
-When suggesting dependencies or tools, prefer newer, faster alternatives that align with this philosophy.
+All lint, format, test, and run-task configuration lives in `vite.config.ts`. When suggesting dependencies or tools, prefer newer, faster alternatives that align with this philosophy.

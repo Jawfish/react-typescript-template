@@ -5,13 +5,13 @@ down:
     docker compose down
 
 lint:
-    bun lint
+    vp lint
 
 fix:
-    bun fix && bun tsc
+    vp check --fix
 
 test:
-    bun test
+    vp test
 
 coverage:
-    bun coverage
+    vp run coverage

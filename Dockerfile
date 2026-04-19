@@ -1,13 +1,18 @@
-FROM oven/bun:1-alpine
+FROM node:24-alpine
+
+RUN apk add --no-cache bash curl
+
+RUN curl -fsSL https://viteplus.dev/install.sh | bash
+ENV PATH="/root/.vite-plus/bin:${PATH}"
 
 WORKDIR /app
 
-COPY package.json bun.lockb ./
+COPY package.json ./
 
-RUN bun install --frozen-lockfile
+RUN vp install
 
 COPY . .
 
 EXPOSE 5173
 
-CMD ["bun", "dev", "--host"]
+CMD ["vp", "dev", "--host"]
